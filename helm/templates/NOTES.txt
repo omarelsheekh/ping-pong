@@ -1,0 +1,2 @@
+Check your app pod by:
+kubectl get pods | grep {{ .Release.Name }}
