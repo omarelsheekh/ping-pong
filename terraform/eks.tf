@@ -78,3 +78,7 @@ module "ping-pong" {
     }
   }
 }
+
+data "aws_eks_cluster_auth" "ping-pong" {
+  name = module.ping-pong.cluster_name
+}
