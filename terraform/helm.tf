@@ -16,7 +16,7 @@ resource "helm_release" "prometheus" {
 
   set {
     name  = "grafana.enabled"
-    value = "true"
+    value = "false"
   }
 }
 
